@@ -1,0 +1,14 @@
+#login-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+
+	&>form {
+		width: 330px;
+		
+		&>.btn {
+			width: 100%;
+		}
+	}
+}
