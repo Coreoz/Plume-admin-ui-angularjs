@@ -2,7 +2,7 @@
 	<h1>Plume Admin UI</h1>
 	<h2>{{ 'login.TITLE' | translate }}</h2>
 	<form ng-submit="loginCtrl.login(loginCtrl.username)">
-		<div class="text-danger wrapper text-center" ng-show="loginCtrl.errorMessage">
+		<div class="errors" ng-show="loginCtrl.errorMessage">
 			{{loginCtrl.errorMessage}}
 		</div>
 		<div class="field-group">
