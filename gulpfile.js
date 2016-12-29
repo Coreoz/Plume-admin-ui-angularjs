@@ -119,7 +119,7 @@ gulp.task('serve', ['sass'], function () {
 		}
 	});
 
-	watch('./app/sass/**/*.scss', ['sass']);
+	watch('./app/sass/**/*.scss', function() { gulp.start('sass'); });
 	watch(["index.html", "./app/**/*"]).on('change', browserSync.reload);
 });
 

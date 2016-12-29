@@ -2,3 +2,5 @@
 /node_modules/
 /rev-manifest.json
 /dist/
+/.idea/
+/plume-admin-ui-angularjs.iml
