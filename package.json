@@ -13,6 +13,7 @@
     "angularjs-toaster": "^2.1.0",
     "bootstrap": "4.0.0-alpha.5",
     "font-awesome": "4.7.0",
+    "sass-flex-mixin": "1.0.3",
     "ng-dialog": "0.6.4",
     "ngstorage": "0.3.11"
   },
