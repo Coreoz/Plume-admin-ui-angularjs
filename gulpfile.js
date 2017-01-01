@@ -106,7 +106,7 @@ var watch = require('gulp-watch');
 
 gulp.task('sass', function() {
 	gulp
-		.src('./app/sass/**/*.scss')
+		.src('app/sass/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('./app/css/'))
 		.pipe(browserSync.stream());
@@ -119,7 +119,7 @@ gulp.task('serve', ['sass'], function () {
 		}
 	});
 
-	watch('./app/sass/**/*.scss', function() { gulp.start('sass'); });
-	watch(["index.html", "./app/**/*"]).on('change', browserSync.reload);
+	watch('app/sass/**/*.scss', function() { gulp.start('sass'); });
+	watch(["index.html", "app/**/*", "!app/css/*.css", "!app/sass/**/*.scss"]).on('change', browserSync.reload);
 });
 
