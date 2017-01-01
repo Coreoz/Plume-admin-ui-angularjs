@@ -32,7 +32,7 @@
 				ng-include="'app/layout/aside-nav.html'">
 		</ul>
 
-		<main ui-view></main>
+		<main ng-click="ctrl.reset()" ng-controller="navController as ctrl" ui-view></main>
 	</div>
 
 	<toaster-container></toaster-container>

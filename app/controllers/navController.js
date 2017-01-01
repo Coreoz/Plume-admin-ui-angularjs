@@ -8,4 +8,8 @@ app.controller('navController', function($rootScope) {
         $rootScope.showAsideNav = !$rootScope.showAsideNav;
     };
 
+    this.reset = function() {
+        $rootScope.showAsideNav = false;
+    };
+
 });
