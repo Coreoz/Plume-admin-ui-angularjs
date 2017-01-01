@@ -1,0 +1,24 @@
+#aside-nav {
+  a {
+    color: $gray-lighter;
+  }
+
+  .icon {
+    margin-right: 1rem;
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      position: static;
+      float: none;
+      border: none;
+      margin: 0;
+      border-radius: 0;
+      background: $gray;
+
+      .dropdown-item:hover {
+        background: $gray-light;
+      }
+    }
+  }
+}
