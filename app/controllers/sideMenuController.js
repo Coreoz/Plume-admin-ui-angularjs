@@ -17,14 +17,13 @@ app.controller('sideMenuController', function($rootScope) {
 
     var closable = false;
 
+    $("#aside-nav .nav-link").on('click', function() {
+        closable = true;
+    });
+
     $("#aside-nav .dropdown").on({
         "shown.bs.dropdown": function () {
             closable = false;
-        },
-        "click": function (event) {
-            if($(event.target).hasClass('dropdown-toggle')) {
-                closable = true;
-            }
         },
         "hide.bs.dropdown": function (event) {
             return closable;
