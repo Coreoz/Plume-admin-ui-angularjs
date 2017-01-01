@@ -1,44 +1,39 @@
-<header>
-	<ul class="nav nav-pills" ng-controller="userMenuController as ctrl">
-		<li class="nav-item dropdown">
-			<a href class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
-				<span>{{ctrl.userFullname}}</span>
-				<b class="caret"></b>
-			</a>
-
-			<div class="dropdown-menu">
-				<a class="dropdown-item" ui-sref="access.login">
-					{{'header.LOGOUT'|translate}}
-				</a>
-			</div>
-		</li>
-	</ul>
-</header>
-<ul class="nav nav-pills">
-	<li class="nav-item">
-		<a ui-sref="app.home" class="nav-link">
-			<i class="fa fa-home icon"></i>
-			{{ 'aside.nav.HOME' | translate }}
-		</a>
-	</li>
-
-	<!-- users -->
-	<li class="nav-item dropdown" ng-show="hasPermission('MANAGE_USERS') || hasPermission('MANAGE_ROLES')">
-		<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
-			<i class="fa fa-users icon"></i>
-			{{ 'aside.nav.USERS' | translate }}
-		</a>
-		<div class="dropdown-menu">
-			<a class="dropdown-item" ui-sref="app.users.list" ng-show="hasPermission('MANAGE_USERS')">
-				{{ 'aside.nav.USERS' | translate }}
-			</a>
-			<a class="dropdown-item" ui-sref="app.roles" ng-show="hasPermission('MANAGE_ROLES')">
-				{{ 'aside.nav.ROLES' | translate }}
-			</a>
+<div class="admin-container">
+	<header>
+		<div id="aside-nav-toggle" ng-controller="navController as ctrl">
+			<button type="button" class="btn" ng-click="ctrl.toggle()">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
 		</div>
-	</li>
-</ul>
+		<div id="site-logo">
+			LOGO
+		</div>
+		<ul id="header-nav" class="nav nav-pills" ng-controller="userMenuController as ctrl">
+			<li class="nav-item dropdown">
+				<a href class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+					<span>{{ctrl.userFullname}}</span>
+					<b class="caret"></b>
+				</a>
 
-<main ui-view></main>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" ui-sref="access.login">
+						{{'header.LOGOUT'|translate}}
+					</a>
+				</div>
+			</li>
+		</ul>
+	</header>
 
-<toaster-container></toaster-container>
+	<div class="admin-content-container">
+		<ul
+				id="aside-nav"
+				class="nav nav-pills nav-stacked"
+				ng-class="{'aside-nav-active': showAsideNav}"
+				ng-include="'app/layout/aside-nav.html'">
+		</ul>
+
+		<main ui-view></main>
+	</div>
+
+	<toaster-container></toaster-container>
+</div>
