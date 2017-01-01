@@ -3,7 +3,9 @@
     @include make-container();
 
     background: $gray-lightest;
-    border-bottom: 2px solid $gray-lighter;
+    border: 2px solid $gray-lighter;
+    border-right: none;
+    border-left: none;
     margin-bottom: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
