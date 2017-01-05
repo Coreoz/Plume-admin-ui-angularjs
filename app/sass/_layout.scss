@@ -17,11 +17,11 @@
       &>#aside-nav,
       &>#site-logo {
         width: $left-menu-nav-width;
-        background: $gray-dark;
+        background: $gray-darker;
         color: $gray-lightest;
 
         &>.nav-item {
-          background: $gray-dark;
+          background: $gray-darker;
           color: $gray-lightest;
         }
       }
