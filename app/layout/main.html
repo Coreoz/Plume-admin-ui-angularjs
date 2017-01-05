@@ -6,22 +6,24 @@
 			</button>
 		</div>
 		<div id="site-logo">
-			LOGO
+			<img src="app/img/app-logo.png" />
 		</div>
-		<ul id="header-nav" class="nav nav-pills" ng-controller="userMenuController as ctrl">
-			<li class="nav-item dropdown">
-				<a href class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
-					<span>{{ctrl.userFullname}}</span>
-					<b class="caret"></b>
-				</a>
-
-				<div class="dropdown-menu dropdown-menu-right">
-					<a class="dropdown-item" ui-sref="access.login">
-						{{'header.LOGOUT'|translate}}
+		<div id="header-nav">
+			<ul class="nav nav-pills" ng-controller="userMenuController as ctrl">
+				<li class="nav-item dropdown">
+					<a href class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+						<span>{{ctrl.userFullname}}</span>
+						<b class="caret"></b>
 					</a>
-				</div>
-			</li>
-		</ul>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" ui-sref="access.login">
+							{{'header.LOGOUT'|translate}}
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</header>
 
 	<div class="admin-content-container">

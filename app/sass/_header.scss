@@ -1,7 +1,39 @@
-#header-nav {
-  background: #fff;
+#app &>.admin-container > header {
 
-  .nav-item {
-    float: right;
+  #site-logo,
+  #header-nav {
+    @include flexbox;
+    @include flex-direction(row);
+    @include align-items(center);
+
+    padding: 0.5rem 0;
   }
+
+  #site-logo {
+    @include flex-just(center)
+  }
+
+  #header-nav {
+    background: #fff;
+
+    @include flex-just(flex-end);
+
+    .nav-pills {
+      a {
+        color: $gray;
+        @include hover-focus-active {
+          color: $gray-dark;
+        }
+      }
+
+      .nav-link.active,
+      .nav-item.open .nav-link {
+        @include plain-hover-focus {
+          color: $gray-dark;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
 }
