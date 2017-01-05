@@ -10,13 +10,13 @@
   }
 
   #site-logo {
-    @include flex-just(center)
+    @include justify-content(center)
   }
 
   #header-nav {
     background: #fff;
 
-    @include flex-just(flex-end);
+    @include justify-content(flex-end);
 
     .nav-pills {
       a {
