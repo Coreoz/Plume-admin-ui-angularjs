@@ -1,7 +1,8 @@
 #app &>.admin-container > header {
 
   #site-logo,
-  #header-nav {
+  #header-nav,
+  #aside-nav-toggle {
     @include flexbox;
     @include flex-direction(row);
     @include align-items(center);
@@ -10,7 +11,12 @@
   }
 
   #site-logo {
-    @include justify-content(center)
+    @include justify-content(center);
+
+    .site-name {
+      margin-left: 1rem;
+      font-weight: bold;
+    }
   }
 
   #header-nav {
@@ -33,6 +39,42 @@
           background-color: transparent;
         }
       }
+    }
+  }
+
+  #aside-nav-toggle {
+    display: none;
+    margin-left: 1rem;
+
+    .btn {
+      background: #fff;
+
+      &:hover,
+      &.active {
+        background: $gray-lighter;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    background: #ffffff;
+
+    #aside-nav-toggle {
+      @include flexbox;
+    }
+
+    &>#site-logo {
+      @include flex(1, 0, auto);
+      width: auto;
+      background: transparent;
+    }
+
+    .site-name {
+      display: none;
+    }
+
+    &>#header-nav {
+      @include flex(0, 0, auto);
     }
   }
 

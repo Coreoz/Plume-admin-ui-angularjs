@@ -32,33 +32,11 @@
       }
     }
 
-    &>header {
-      #aside-nav-toggle {
-        display: none;
-      }
-    }
-
     &>.admin-content-container {
       @include flex(1, 0, auto);
     }
 
     @include media-breakpoint-down(sm) {
-      &>header {
-        #aside-nav-toggle {
-          display: block;
-        }
-
-        &>#site-logo {
-          @include flex(1, 0, auto);
-          width: auto;
-          background: transparent;
-        }
-
-        &>#header-nav {
-          @include flex(0, 0, auto);
-        }
-      }
-
       &>.admin-content-container {
         position: relative;
 

@@ -1,12 +1,13 @@
 <div class="admin-container">
 	<header>
 		<div id="aside-nav-toggle" ng-controller="sideMenuController as ctrl">
-			<button type="button" class="btn" ng-click="ctrl.toggle()">
+			<button type="button" class="btn" ng-click="ctrl.toggle()" ng-class="{'active': showAsideNav}">
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</button>
 		</div>
 		<div id="site-logo">
 			<img src="app/img/app-logo.png" />
+			<span class="site-name">Coreoz</span>
 		</div>
 		<div id="header-nav">
 			<ul class="nav nav-pills" ng-controller="userMenuController as ctrl">
