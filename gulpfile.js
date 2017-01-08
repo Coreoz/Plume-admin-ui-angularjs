@@ -33,7 +33,7 @@ gulp.task('clean', function() {
 	rimraf.sync(target);
 });
 
-gulp.task('css', ['clean'], function() {
+gulp.task('css', ['clean', 'sass'], function() {
 	var cssStream = domSrc({file:source+'/index.html',selector:'link[rel="stylesheet"]',attribute:'href'});
 	
 	return cssStream
