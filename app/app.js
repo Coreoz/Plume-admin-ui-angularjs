@@ -15,15 +15,17 @@ var app = angular.module('admin',[
 .config(function($translateProvider) {
 	$translateProvider
 		.useSanitizeValueStrategy('escapeParameters')
+		.translations('en', translations_en)
 		.translations('fr', translations_fr)
 		// tell the module what language to use by default
-		.registerAvailableLanguageKeys(['fr'],
+		.registerAvailableLanguageKeys(['en', 'fr'],
 			{
 				'fr*': 'fr',
-				'*': 'fr' // must be last!
+				'en*': 'en',
+				'*': 'en' // must be last!
 			})
 		.determinePreferredLanguage()
-		.fallbackLanguage('fr')
+		.fallbackLanguage('en')
 	;
 })
 .run(function($rootScope, $state, sessionService, $translate) {

@@ -1,7 +1,6 @@
 var translations_fr = {
 	"aside" : {
 		"nav" : {
-			"HEADER" : "Navigation",
 			"USERS" : "Utilisateurs",
 			"ROLES" : "Roles",
 			"HOME" : "Accueil"
@@ -10,15 +9,6 @@ var translations_fr = {
 	"header" : {
 		"PROFILE" : "Profil",
 		"LOGOUT" : "Se déconnecter"
-	},
-	"components" : {
-		"smarttable" : {
-			"pagination" : {
-				"LABEL_FIRST" : "Première",
-				"LABEL_LAST" : "Dernière",
-				"LABEL_OF" : "sur"
-			}
-		}
 	},
 	"login" : {
 		"IDENTIFIER" : "Identifiant",
