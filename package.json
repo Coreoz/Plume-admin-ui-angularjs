@@ -13,11 +13,11 @@
     "angularjs-toaster": "^2.1.0",
     "bootstrap": "4.0.0-alpha.5",
     "font-awesome": "4.7.0",
-    "sass-flex-mixin": "1.0.3",
     "ng-dialog": "0.6.4",
     "ngstorage": "0.3.11"
   },
   "devDependencies": {
+    "sass-flex-mixin": "1.0.3",
     "browser-sync": "2.18.5",
     "gulp": "3.9.1",
     "gulp-cheerio": "0.6.2",
