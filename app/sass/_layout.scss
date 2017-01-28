@@ -37,6 +37,7 @@ html {
      
      &>main {
        @include flex-basis(0);
+       width: 0; /* to make sure the main container will never be larger than it should */
      }
     }
 
