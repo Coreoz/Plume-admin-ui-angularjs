@@ -50,7 +50,9 @@ var translations_fr = {
 		"CONFIRM" : "Confirmer"
 	},
 	"file": {
-		"SELECT": "Sélectionner un fichier..."
+		"SELECT": "Sélectionner un fichier...",
+		"ADD_IMAGE": "Ajouter une image",
+		"DELETE_MEDIA": "Supprimer le média ?"
 	},
 	"message" : {
 		"SUCCESS" : "Les modifications ont bien été prises en compte",
@@ -71,3 +73,4 @@ var translations_fr = {
 		"MESSAGE" : "{{field0}}"
 	}
 };
+
