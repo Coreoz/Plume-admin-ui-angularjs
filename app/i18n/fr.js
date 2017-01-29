@@ -49,6 +49,9 @@ var translations_fr = {
 		"NEW" : "Nouveau",
 		"CONFIRM" : "Confirmer"
 	},
+	"file": {
+		"SELECT": "Sélectionner un fichier..."
+	},
 	"message" : {
 		"SUCCESS" : "Les modifications ont bien été prises en compte",
 		"ERROR" : "Les modifications ont échoués"
