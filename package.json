@@ -35,5 +35,9 @@
     "gulp-watch": "4.3.11",
     "rimraf": "2.5.4",
     "streamqueue": "1.1.1"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build"
   }
 }
