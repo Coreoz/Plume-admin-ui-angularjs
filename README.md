@@ -1,7 +1,7 @@
 Plume Admin UI - AngularJS
 ==========================
 
-Plume Admin UI is JavaScript frontend for [Plume Admin](https://github.com/Coreoz/Plume-admin).
+Plume Admin UI is a JavaScript frontend for [Plume Admin](https://github.com/Coreoz/Plume-admin).
 It is written with [AngularJS](https://angularjs.org/).
 
 Installation
@@ -12,8 +12,9 @@ Installation
 3. Run the application: `yarn start`
 
 If a server with [Plume Admin](https://github.com/Coreoz/Plume-admin) is running localy on <http://localhost:8080>,
-then you can reach the Plume Admin UI application on <http://localhost:3000>.
-As a reminder, in the login screen, the credentials are:
+then the Plume Admin UI application can be reached on <http://localhost:3000>.
+
+As a reminder, in the login screen the default credentials are:
 - login: admin
 - password: admin
 
