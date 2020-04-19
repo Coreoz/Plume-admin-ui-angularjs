@@ -4,6 +4,9 @@ Plume Admin UI - AngularJS
 Plume Admin UI is a JavaScript frontend for [Plume Admin](https://github.com/Coreoz/Plume-admin).
 It is written with [AngularJS](https://angularjs.org/).
 
+/!\ Note that the JS frontend AngularJS application is updated only to the minimum to get the demo working.
+To build an admin frontend, you should use React or the latest version of Angular.
+
 Installation
 ------------
 1. Install [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) if they are not already installed
