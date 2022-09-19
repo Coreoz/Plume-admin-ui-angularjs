@@ -1,4 +1,4 @@
-**⚠️ This repository is not maintained anymore. AngularJs should not be used for any new project. This sample [Plume Admin](https://github.com/Coreoz/Plume) project will be replaced with a React sample project ⚠️**
+**⚠️ This repository is not maintained anymore. AngularJs should not be used for any new project. This sample [Plume Admin](https://github.com/Coreoz/Plume) project is replaced by [Create Plume React Project](https://github.com/Coreoz/create-plume-react-project) which enables to quickly create a React administration frontend ⚠️**
 
 Plume Admin UI - AngularJS
 ==========================
